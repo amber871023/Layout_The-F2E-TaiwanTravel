@@ -604,3 +604,15 @@ progress {
 [hidden] {
   display: none !important;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: calc(100% - 50px); /*減去footer高度*/
+}
+.footer {
+  height: 50px; /*設定footer本身高度*/
+}
