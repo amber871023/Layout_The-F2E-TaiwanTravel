@@ -1,0 +1,10 @@
+{
+    "liveSassCompile.settings.formats": [{
+        "format": "compressed",// 壓縮檔成一行CSS:文件較小、無註釋、代碼格式差、可讀性差。易于加载
+        //"format": "rxpanded", 未壓縮檔，文件較大、有註釋、代碼格式好、可讀性好。
+        "extensionName": ".css",
+        "savePath": "/css/"
+    }
+],
+"compile-hero.disable-compile-files-on-did-save-code": false
+}

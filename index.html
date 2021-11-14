@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 台灣走走 </title>
+  <link rel="stylesheet" href="./css/all.css">
+  <!--Material icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-light mb-5">
+    <div class="container">
+      <h1><a href="./index.html" class="logo navbar-brand text-white font-weight-bold">台灣走走</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons d-md-none d-block text-primary">
+          menu
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center d-flex justify-content-around">
+          <li class="nav-item"><a href="#bedAdvantage" class="nav-link text-primary">探索景點</a></li>
+          <li class="nav-item"><a href="#transport" class="nav-link text-primary">節慶活動</a></li>
+          <li class="nav-item"><a href="#productList" class="nav-link text-primary">品嚐美食</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--搜尋列-->
+<section class="container">
+  <div class="row flex-row justify-content-center">
+    <div class="col-10 d-flex">
+    <div class="col-8">
+      <p class="fs-1">探索<span style="border-bottom: solid 2px #E0DA48;">台灣之美</span> <br>讓我們更親近這片土地</p>
+      <p class="fs-4 text-dark">
+        <span class="material-icons text-light">
+        place
+        </span> 台灣旅遊景點導覽 <span class="fs-5" style="font-family: Playfair Display;">  Taiwan Travel Guide</span></p>
+    </div>
+    <div class="col-4">
+      <select class="form-select mb-7" aria-label="Default select example">
+        <option selected>探索景點</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <input class="form-control mb-7" type="text" placeholder="你想去哪裡？請輸入關鍵字" aria-label="default input example">
+      <button type="button" class="btn btn-primary text-white">搜 尋</button>
+    </div>
+    </div>
+  </div>
+  
+</section>
+
+<!--Banner-->
+<section class="container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/banner.jpg" class="d-block w-100" alt="banner height="400px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+
+<!--近期活動-->
+<section class="container mb-3">
+  <div class="row">
+      <div class="col-6 fs-2">近期活動</div>
+      <div class="col-6"> <a href="" class=" text-info">查看更多活動 ></a></div>
+      <div class="col-6 d-flex flex-column">
+        <div class="card">
+          <img src="./assets/banner.jpg" class="card-img-top" alt="..." style="width: 160px;">
+          <div class="card-body">
+            <div class="d-flex flex-column">
+              <p class="card-text text-dark">2021/10/30 - 2021/11/13</p>
+              <h3 class="card-title">2021 日月潭花火音樂嘉年華</h3>
+            </div>
+            <div class="d-flex justify-content-between"> 
+              <p class="fs-4 text-dark mb-0">
+                <span class="material-icons text-light">
+                place
+                </span> 南投縣</p>
+                <a href="" class=" text-primary">詳細介紹 ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+<!--熱門打卡景點-->
+
+
+<!--一再回訪美食-->
+
+
+  <!--Footer-->
+  <footer class="bg-primary py-8">
+    <div class="container d-flex justify-content-center">
+      <p class="mb-0 text-white">#The F2E 3rd Week01 UI#Breakfast | FE#AmberCYT</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" charset="utf-8"></script>
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!--Bootstrap-->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <!--header-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
