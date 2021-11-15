@@ -13,7 +13,7 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-md navbar-light mb-5">
+  <nav class="navbar navbar-expand-md mb-9">
     <div class="container">
       <h1><a href="./index.html" class="logo navbar-brand text-white font-weight-bold">台灣走走</a></h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,33 +24,37 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav text-center d-flex justify-content-around">
-          <li class="nav-item"><a href="explore-spots.html" class="nav-link text-primary">探索景點</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-primary">節慶活動</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-primary">品嚐美食</a></li>
+          <li class="nav-item"><a href="explore-spots.html" class="nav-link">探索景點</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">節慶活動</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">品嚐美食</a></li>
         </ul>
       </div>
     </div>
   </nav>
 <!--搜尋列-->
-<section class="container">
+<section class="container mb-8">
   <div class="row flex-row justify-content-center">
     <div class="col-10 d-flex">
     <div class="col-8">
-      <p class="fs-1">探索<span style="border-bottom: solid 2px #E0DA48;">台灣之美</span> <br>讓我們更親近這片土地</p>
-      <p class="fs-4 text-dark">
+      <p class="fs-8">探索<span style="border-bottom: solid 2px #E0DA48;">台灣之美</span> <br>讓我們更親近這片土地</p>
+      <p class="fs-3 text-dark d-flex justify-content-start">
         <span class="material-icons text-light">
         place
-        </span> 台灣旅遊景點導覽 <span class="fs-5" style="font-family: Playfair Display;">  Taiwan Travel Guide</span></p>
+        </span> 台灣旅遊景點導覽 <span class="fs-2" style="font-family: Playfair Display;">  Taiwan Travel Guide</span></p>
     </div>
     <div class="col-4">
-      <select class="form-select mb-7" aria-label="Default select example">
+      <select class="form-select mb-1" aria-label="Default select example">
         <option selected>探索景點</option>
         <option value="1">One</option>
         <option value="2">Two</option>
         <option value="3">Three</option>
       </select>
-      <input class="form-control mb-7" type="text" placeholder="你想去哪裡？請輸入關鍵字" aria-label="default input example">
-      <button type="button" class="btn btn-primary text-white">搜 尋</button>
+      <input class="form-control mb-1" type="text" placeholder="你想去哪裡？請輸入關鍵字" aria-label="default input example">
+      <button type="button" class="btn btn-primary w-100 text-white d-flex justify-content-center">
+        <span class="material-icons text-white pe-3">
+        search
+        </span>
+         搜    尋</button>
     </div>
     </div>
   </div>
@@ -58,7 +62,7 @@
 </section>
 
 <!--Banner-->
-<section class="container mb-3">
+<section class="container mb-6">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -66,8 +70,11 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active text-center">
         <img src="./assets/banner.jpg" class="d-block w-100" alt="banner height="400px">
+        <div class="carousel-caption d-none d-md-block py-0">
+          <h3 class="mb-0">新北市 | 不厭亭</h3>
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -84,20 +91,20 @@
 
 
 <!--近期活動-->
-<section class="container mb-3">
+<section class="container mb-6">
   <div class="row">
-      <div class="col-6 fs-2">近期活動</div>
+      <div class="col-6 fs-7">近期活動</div>
       <div class="col-6 d-flex justify-content-end align-items-center"> <a href="" class=" text-info">查看更多活動 ></a></div>
-      <div class="col-6 d-flex flex-column">
-        <div class="card">
+      <div class="col-12 col-md-6 d-flex flex-column">
+        <div class="card d-flex flex-row">
           <img src="./assets/banner.jpg" class="card-img-top" alt="..." style="width: 160px;">
-          <div class="card-body">
+          <div class="card-body bg-darkLight d-flex flex-column justify-content-between">
             <div class="d-flex flex-column">
-              <p class="card-text text-dark">2021/10/30 - 2021/11/13</p>
-              <h3 class="card-title">2021 日月潭花火音樂嘉年華</h3>
+              <p class="card-text text-dark mb-1">2021/10/30 - 2021/11/13</p>
+              <h3 class="card-title fs-4">2021 日月潭花火音樂嘉年華</h3>
             </div>
             <div class="d-flex justify-content-between"> 
-              <p class="fs-4 text-dark mb-0">
+              <p class="text-dark d-flex justify-content-center mb-0">
                 <span class="material-icons text-light">
                 place
                 </span> 南投縣</p>
@@ -110,15 +117,15 @@
 </section>
 
 <!--熱門打卡景點-->
-<section class="container mb-3">
+<section class="container mb-6">
   <div class="row">
-      <div class="col-12 fs-2">熱門打卡景點</div>
+      <div class="col-12 fs-7">熱門打卡景點</div>
       <div class="col-3">
-          <img src="./assets/banner.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius:20px;">
-          <div class="card-body">
-              <h3 class="card-title fw-bold">龜山島牛奶海</h3>
+          <img src="./assets/banner.jpg" class="card-img-top mb-2" alt="..." style="height: 200px; border-radius:20px;">
+          <div class="card-info">
+              <h3 class="card-title fw-bold fs-4">龜山島牛奶海</h3>
             <div class="d-flex justify-content-between"> 
-              <p class="fs-4 text-dark mb-0">
+              <p class="text-dark d-flex justify-content-center mb-0">
                 <span class="material-icons text-light">
                 place
                 </span> 宜蘭縣</p>
@@ -129,15 +136,15 @@
 </section>
 
 <!--一再回訪美食-->
-<section class="container mb-3">
+<section class="container mb-10">
   <div class="row">
-      <div class="col-12 fs-2">一再回訪美食</div>
+      <div class="col-12 fs-7">一再回訪美食</div>
       <div class="col-3">
-          <img src="./assets/banner.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius:20px;">
-          <div class="card-body">
-              <h3 class="card-title fw-bold">一再回訪美食</h3>
+          <img src="./assets/banner.jpg" class="card-img-top mb-2" alt="..." style="height: 200px; border-radius:20px;">
+          <div class="card-info">
+              <h3 class="card-title fw-bold fs-4">金都餐廳</h3>
             <div class="d-flex justify-content-between"> 
-              <p class="fs-4 text-dark mb-0">
+              <p class="text-dark d-flex justify-content-center mb-0">
                 <span class="material-icons text-light">
                 place
                 </span> 南投縣</p>
@@ -148,7 +155,7 @@
 </section>
 
   <!--Footer-->
-  <footer class="bg-primary py-8">
+  <footer class="bg-primary py-5">
     <div class="container d-flex justify-content-center">
       <p class="mb-0 text-white">#The F2E 3rd Week01 UI#Breakfast | FE#AmberCYT</p>
     </div>

@@ -24,8 +24,6 @@
   width: 100%;
   overflow: hidden;
   @include clearfix();
-  border-radius: 24px;
-  height: 400px;
 }
 
 .carousel-item {
@@ -33,6 +31,7 @@
   display: none;
   float: left;
   width: 100%;
+  height: 400px;
   margin-right: -100%;
   backface-visibility: hidden;
   @include transition($carousel-transition);
@@ -152,10 +151,10 @@
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: escape-svg($carousel-control-prev-icon-bg);
+  background-image: url("../assets/Arrow-Left.png");
 }
 .carousel-control-next-icon {
-  background-image: escape-svg($carousel-control-next-icon-bg);
+  background-image: url("../assets/Arrow-Right.png");
 }
 
 // Optional indicator pips/controls
@@ -210,10 +209,8 @@
 .carousel-caption {
   position: absolute;
   right: (100% - $carousel-caption-width) * 0.5;
-  bottom: $carousel-caption-spacer;
+  bottom: 50%;
   left: (100% - $carousel-caption-width) * 0.5;
-  padding-top: $carousel-caption-padding-y;
-  padding-bottom: $carousel-caption-padding-y;
   color: $carousel-caption-color;
   text-align: center;
 }
