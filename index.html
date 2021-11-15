@@ -13,14 +13,12 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-md mb-9">
+  <nav class="navbar navbar-expand-md">
     <div class="container">
       <h1><a href="./index.html" class="logo navbar-brand text-white font-weight-bold">台灣走走</a></h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="material-icons d-md-none d-block text-primary">
-          menu
-        </span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+        <img src="./assets/menu-mobile.png" alt="">
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav text-center d-flex justify-content-around">
@@ -34,15 +32,15 @@
 <!--搜尋列-->
 <section class="container mb-8">
   <div class="row flex-row justify-content-center">
-    <div class="col-10 d-flex">
-    <div class="col-8">
+    <div class="col-12 col-md-10 d-md-flex">
+    <div class="col-12 col-md-8 titleText">
       <p class="fs-8">探索<span style="border-bottom: solid 2px #E0DA48;">台灣之美</span> <br>讓我們更親近這片土地</p>
-      <p class="fs-3 text-dark d-flex justify-content-start">
+      <p class="fs-3 text-dark d-flex justify-content-start smallTitle">
         <span class="material-icons text-light">
         place
         </span> 台灣旅遊景點導覽 <span class="fs-2" style="font-family: Playfair Display;">  Taiwan Travel Guide</span></p>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-md-4">
       <select class="form-select mb-1" aria-label="Default select example">
         <option selected>探索景點</option>
         <option value="1">One</option>
@@ -63,30 +61,30 @@
 
 <!--Banner-->
 <section class="container mb-6">
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active text-center">
-        <img src="./assets/banner.jpg" class="d-block w-100" alt="banner height="400px">
-        <div class="carousel-caption d-none d-md-block py-0">
-          <h3 class="mb-0">新北市 | 不厭亭</h3>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img src="./assets/banner.jpg" class="d-block bannerImg" alt="banner">
+            <div class="carousel-caption d-none d-md-block py-0">
+              <h3 class="mb-0">新北市 | 不厭亭</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
+  </section>
 
 
 
@@ -120,7 +118,7 @@
 <section class="container mb-6">
   <div class="row">
       <div class="col-12 fs-7">熱門打卡景點</div>
-      <div class="col-3">
+      <div class="col-6 col-md-3">
           <img src="./assets/banner.jpg" class="card-img-top mb-2" alt="..." style="height: 200px; border-radius:20px;">
           <div class="card-info">
               <h3 class="card-title fw-bold fs-4">龜山島牛奶海</h3>
@@ -139,7 +137,7 @@
 <section class="container mb-10">
   <div class="row">
       <div class="col-12 fs-7">一再回訪美食</div>
-      <div class="col-3">
+      <div class="col-6 col-md-3">
           <img src="./assets/banner.jpg" class="card-img-top mb-2" alt="..." style="height: 200px; border-radius:20px;">
           <div class="card-info">
               <h3 class="card-title fw-bold fs-4">金都餐廳</h3>

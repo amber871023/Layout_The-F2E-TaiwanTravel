@@ -23,6 +23,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  border-radius: 24px !important;
   @include clearfix();
 }
 

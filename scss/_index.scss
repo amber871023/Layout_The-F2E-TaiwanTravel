@@ -9,36 +9,27 @@
     display: block;
     background: no-repeat center url(../assets/logo-mobile.jpg);
     padding: 0;
+    width: 118px;
   }
 }
 
 .bannerImg {
-  background-image: url(../assets/banner.jpg);
+  width: 100%;
   background-size: cover;
-  background-color: #e9ecef;
+  background-position: center center;
   background-repeat: no-repeat;
-}
-.ticketImg {
-  position: relative;
-  height: 180px;
-  a {
-    display: block;
-    overflow: hidden;
-  }
-  img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    &:hover {
-      transform: scale(1.15);
-    }
+  height: 400px;
+  @include mobile() {
+    height: 185px;
   }
 }
 
-.ticketRegion,
-.ticketRank {
-  position: absolute;
-  border-radius: 0 5px 5px 0px;
-  color: #fff;
-  text-align: center;
+.titleText {
+  @include mobile() {
+    text-align: center;
+    .smallTitle {
+      display: flex;
+      justify-content: center !important;
+    }
+  }
 }
