@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣走走．TaiWalk</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <!--Material icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+ <!--Navbar-->
+ <nav class="navbar navbar-expand-md">
+  <div class="container">
+    <h1><a href="./index.html" class="logo navbar-brand">台灣走走</a></h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+      <img src="./assets/menu-mobile.png" alt="">
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-center d-flex justify-content-around">
+        <li class="nav-item"><a href="spots.html" class="nav-link">探索景點</a></li>
+        <li class="nav-item"><a href="festival.html" class="nav-link">節慶活動</a></li>
+        <li class="nav-item"><a href="tasteFood.html" class="nav-link">品嚐美食</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--標籤列-->
+<section class="container mb-7">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+    <li class="breadcrumb-item active" aria-current="page">品嘗美食</li>
+  </ol>
+</nav>
+</section>
+
+<!--篩選列-->
+<section class="container mb-8">
+  <div class="row flex-row justify-content-center g-1">
+    <div class="col-12 col-md-3">
+      <select class="form-select me-3" aria-label="Default select example">
+        <option selected>全部縣市</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-6">
+      <input class="form-control me-3" type="text" placeholder="你想去哪裡？請輸入關鍵字" aria-label="default input example">
+    </div>
+    <div class="col-12 col-md-3">
+      <button type="button" class="btn btn-primary w-100 text-white d-flex justify-content-center">
+        <span class="material-icons text-white pe-3">
+        search
+        </span>
+         搜    尋</button>
+    </div>
+  </div>
+</section>
+
+<!--熱門分類-->
+<section class="container">
+  <div class="row">
+      <div class="col-12 fs-7">熱門分類</div>
+      <div class="col-6 col-md-3 position-relative">
+          <img src="./assets/food/local-specialty.png" class="w-100 mb-2" alt="地方特產">
+          <div class="">
+              <h3 class="position-absolute top-50 start-50 translate-middle text-white fw-bold fs-4">地方特產</h3>
+          </div>
+      </div>
+      <div class="col-6 col-md-3 position-relative">
+        <img src="./assets/food/chinese-cuisine.png" class="w-100 mb-2" alt="中式美食">
+        <div class="">
+            <h3 class="position-absolute top-50 start-50 translate-middle text-white fw-bold fs-4">中式美食</h3>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 position-relative">
+      <img src="./assets/food/dessert.png" class="w-100 mb-2" alt="甜點冰品">
+      <div class="">
+          <h3 class="position-absolute top-50 start-50 translate-middle text-white fw-bold fs-4">甜點冰品</h3>
+      </div>
+      </div>
+      <div class="col-6 col-md-3 position-relative">
+    <img src="./assets/food/exotic-cuisine.png" class="w-100 mb-2" alt="異國料理">
+    <div class="">
+        <h3 class="position-absolute top-50 start-50 translate-middle text-white fw-bold fs-4">異國料理</h3>
+    </div>
+      </div>
+      <div class="col-6 col-md-3 position-relative">
+        <img src="./assets/food/souvenir.png" class="w-100 mb-2" alt="伴手禮">
+        <div class="">
+            <h3 class="position-absolute top-50 start-50 translate-middle text-white fw-bold fs-4">伴手禮</h3>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 position-relative">
+        <img src="./assets/food/vegetarian.png" class="w-100 mb-2" alt="素食">
+        <div class="">
+            <h3 class="position-absolute top-50 start-50 translate-middle text-white fw-bold fs-4">素食</h3>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+  </div>
+
+  <!--Footer-->
+  <footer class="bg-primary text-center d-flex align-items-center">
+    <div class="container">
+      <p class="mb-0 text-white">#The F2E 3rd Week01 UI#Breakfast | FE#AmberCYT</p>
+    </div>
+  </footer>                     
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" charset="utf-8"></script>
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!--Bootstrap-->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <!--header-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

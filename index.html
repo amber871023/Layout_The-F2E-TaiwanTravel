@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> 台灣走走 </title>
+  <title>台灣走走．TaiWalk</title>
   <link rel="stylesheet" href="./css/all.css">
   <!--Material icons-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,16 +15,16 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-md">
     <div class="container">
-      <h1><a href="./index.html" class="logo navbar-brand text-white font-weight-bold">台灣走走</a></h1>
+      <h1><a href="./index.html" class="logo navbar-brand ">台灣走走</a></h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
         <img src="./assets/menu-mobile.png" alt="">
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav text-center d-flex justify-content-around">
-          <li class="nav-item"><a href="explore-spots.html" class="nav-link">探索景點</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">節慶活動</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">品嚐美食</a></li>
+          <li class="nav-item"><a href="spots.html" class="nav-link">探索景點</a></li>
+          <li class="nav-item"><a href="festival.html" class="nav-link">節慶活動</a></li>
+          <li class="nav-item"><a href="tasteFood.html" class="nav-link">品嚐美食</a></li>
         </ul>
       </div>
     </div>
@@ -66,13 +66,18 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
-            <img src="./assets/banner.jpg" class="d-block bannerImg" alt="banner">
+            <img src="./assets/banner.png" class="d-block bannerImg w-100" alt="banner">
             <div class="carousel-caption d-none d-md-block py-0">
               <h3 class="mb-0">新北市 | 不厭亭</h3>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/banner.jpg" class="d-block w-100" alt="banner">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -93,9 +98,27 @@
   <div class="row">
       <div class="col-6 fs-7">近期活動</div>
       <div class="col-6 d-flex justify-content-end align-items-center"> <a href="" class=" text-info">查看更多活動 ></a></div>
-      <div class="col-12 col-md-6 d-flex flex-column">
+      <div class="col-12 col-md-6 d-flex flex-column mb-3">
         <div class="card d-flex flex-row">
-          <img src="./assets/banner.jpg" class="card-img-top" alt="..." style="width: 160px;">
+          <img src="./assets/event.jpg" class="card-img-top" alt="..." style="width: 160px;">
+          <div class="card-body bg-darkLight d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column">
+              <p class="card-text text-dark mb-1">2021/10/30 - 2021/11/13</p>
+              <h3 class="card-title fs-4">2021 日月潭花火音樂嘉年華</h3>
+            </div>
+            <div class="d-flex justify-content-between"> 
+              <p class="text-dark d-flex justify-content-center mb-0">
+                <span class="material-icons text-light">
+                place
+                </span> 南投縣</p>
+                <a href="" class=" text-primary">詳細介紹 ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 d-flex flex-column mb-3">
+        <div class="card d-flex flex-row">
+          <img src="./assets/event.jpg" class="card-img-top" alt="..." style="width: 160px;" >
           <div class="card-body bg-darkLight d-flex flex-column justify-content-between">
             <div class="d-flex flex-column">
               <p class="card-text text-dark mb-1">2021/10/30 - 2021/11/13</p>
@@ -117,9 +140,10 @@
 <!--熱門打卡景點-->
 <section class="container mb-6">
   <div class="row">
-      <div class="col-12 fs-7">熱門打卡景點</div>
+      <div class="col-6 fs-7">熱門打卡景點</div>
+      <div class="col-6 d-flex justify-content-end align-items-center"> <a href="" class=" text-info">查看更多活動 ></a></div>
       <div class="col-6 col-md-3">
-          <img src="./assets/banner.jpg" class="card-img-top mb-2" alt="..." style="height: 200px; border-radius:20px;">
+          <img src="./assets/spotsPhoto.png" class="card-img-top mb-2" alt="..." style="height: 200px; border-radius:20px;">
           <div class="card-info">
               <h3 class="card-title fw-bold fs-4">龜山島牛奶海</h3>
             <div class="d-flex justify-content-between"> 
@@ -134,9 +158,10 @@
 </section>
 
 <!--一再回訪美食-->
-<section class="container mb-10">
+<section class="container">
   <div class="row">
-      <div class="col-12 fs-7">一再回訪美食</div>
+      <div class="col-6 fs-7">一再回訪美食</div>
+      <div class="col-6 d-flex justify-content-end align-items-center"> <a href="" class=" text-info">查看更多活動 ></a></div>
       <div class="col-6 col-md-3">
           <img src="./assets/banner.jpg" class="card-img-top mb-2" alt="..." style="height: 200px; border-radius:20px;">
           <div class="card-info">
@@ -153,8 +178,8 @@
 </section>
 
   <!--Footer-->
-  <footer class="bg-primary py-5">
-    <div class="container d-flex justify-content-center">
+  <footer class="bg-primary text-center d-flex align-items-center">
+    <div class="container">
       <p class="mb-0 text-white">#The F2E 3rd Week01 UI#Breakfast | FE#AmberCYT</p>
     </div>
   </footer>

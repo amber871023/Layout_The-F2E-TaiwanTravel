@@ -13,6 +13,10 @@
 
 .carousel {
   position: relative;
+  height: 400px;
+  @include mobile() {
+    height: 185px;
+  }
 }
 
 .carousel.pointer-event {
@@ -167,22 +171,21 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  left: 0;
   z-index: 2;
   display: flex;
   justify-content: center;
   padding: 0;
   // Use the .carousel-control's width as margin so we don't overlay those
-  margin-right: $carousel-control-width;
+  margin-right: 50px; //$carousel-control-width;
   margin-bottom: 1rem;
-  margin-left: $carousel-control-width;
+  //margin-left: $carousel-control-width;
   list-style: none;
 
   [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: $carousel-indicator-width;
-    height: $carousel-indicator-height;
+    width: 20px !important;
+    height: 20px !important;
     padding: 0;
     margin-right: $carousel-indicator-spacer;
     margin-left: $carousel-indicator-spacer;
@@ -190,12 +193,16 @@
     cursor: pointer;
     background-color: $carousel-indicator-active-bg;
     background-clip: padding-box;
-    border: 0;
+    border-radius: 50%;
     // Use transparent borders to increase the hit area by 10px on top and bottom.
     border-top: $carousel-indicator-hit-area-height solid transparent;
     border-bottom: $carousel-indicator-hit-area-height solid transparent;
     opacity: $carousel-indicator-opacity;
     @include transition($carousel-indicator-transition);
+    @include mobile() {
+      width: 10px !important;
+      height: 10px !important;
+    }
   }
 
   .active {

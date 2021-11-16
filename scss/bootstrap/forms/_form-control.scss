@@ -11,7 +11,7 @@
   font-weight: $input-font-weight;
   line-height: $input-line-height;
   color: $input-color;
-  background-color: $input-bg;
+  background-color: #f9f9f9;
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
   appearance: none; // Fix appearance for date inputs in Safari
@@ -49,7 +49,11 @@
   // TODO: we can remove this workaround once https://bugs.webkit.org/show_bug.cgi?id=198959 is resolved
   &::-webkit-date-and-time-value {
     // Multiply line-height by 1em if it has no unit
-    height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
+    height: if(
+      unit($input-line-height) == "",
+      $input-line-height * 1em,
+      $input-line-height
+    );
   }
 
   // Placeholder
@@ -208,12 +212,20 @@ textarea {
   }
 
   &::-moz-color-swatch {
-    height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
+    height: if(
+      unit($input-line-height) == "",
+      $input-line-height * 1em,
+      $input-line-height
+    );
     @include border-radius($input-border-radius);
   }
 
   &::-webkit-color-swatch {
-    height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
+    height: if(
+      unit($input-line-height) == "",
+      $input-line-height * 1em,
+      $input-line-height
+    );
     @include border-radius($input-border-radius);
   }
 }
