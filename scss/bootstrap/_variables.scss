@@ -647,7 +647,9 @@ $h6-font-size: $font-size-base !default;
 $font-sizes: (
   1: $font-size-base,
   2: $font-size-base * 1.125,
-  //18 3: $font-size-base * 1.25; //20
+  //18
+  3: $font-size-base * 1.25,
+  //20
   4: $font-size-base * 1.375,
   //22
   5: $font-size-base * 1.5,

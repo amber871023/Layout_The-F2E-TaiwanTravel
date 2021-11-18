@@ -19,7 +19,6 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 400px;
   @include mobile() {
     height: 185px;
   }
